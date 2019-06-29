@@ -1,0 +1,86 @@
+{% extends "blog/base.html" %}
+{% load staticfiles %}
+{% block title %}about{% endblock %}
+{% block content %}
+    <div class="about-content">
+        <div class="w1000">
+            <div class="item info">
+                <div class="title">
+                    <h3>我的介绍</h3>
+                </div>
+                <div class="cont row">
+                    <div style="width: 370px; height: 220px" class="col-md-6">
+                        {% if user_obj.0.photo %}
+                            <img src="/static/media/{{ user_obj.0.photo }}" class="img-circle" id="my_photo"
+                                 name="user_face">
+                        {% else %}
+                            <img name="user_face" src="{% static 'images/xc_img1.jpg' %}" class="img-circle"
+                                 id="my_photo">
+                        {% endif %}
+                    </div>
+                    <div class="per-info col-md-6">
+                        <p>
+                            {% if request.session.is_login %}
+                                <span class="name">用户名：{{ user_obj.0.username }}</span><br/>
+                            {% endif %}
+                            {% if user_obj.0.age and request.session.is_login %}
+                                <span class="age">年龄：{{ user_obj.0.age }}</span><br/>
+                            {% else %}
+                                <span class="age">年龄：暂无填写</span><br/>
+                            {% endif %}
+                            {% if user_obj.0.profession  and request.session.is_login %}
+                                <span class="Career">职业：{{ user_obj.0.profession }}</span><br/>
+                            {% else %}
+                                <span class="Career">职业：暂无填写</span><br/>
+                            {% endif %}
+                            {% if user_obj.0.hobby and request.session.is_login %}
+                                <span class="interest">爱好：{{ user_obj.0.hobby }}</span>
+                            {% else %}
+                                <span class="interest">爱好：暂无填写</span><br/>
+                            {% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="item tool">
+                <div class="title">
+                    <h3>我的技能</h3>
+                </div>
+                <div class="layui-fluid">
+                    <div class="layui-row">
+                        {% if user_obj.0.skills  and request.session.is_login %}
+                            <div class="layui-col-xs6 layui-col-sm3 layui-col-md3">
+                                <div class="cont-box">
+                                    <h2>{{ user_obj.0.skills }}</h2>
+                                </div>
+                            </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="item contact">
+                <div class="title">
+                    <h3>联系方式</h3>
+                </div>
+                <div class="cont">
+                    <img src="/static/images/erweima.png">
+                    <div class="text">
+                        {% if user_obj.0.weiChat  and request.session.is_login %}
+                            <p class="WeChat">微信：<span>{{ user_obj.0.weiChat }}</span></p>
+                        {% else %}
+                            <p class="WeChat">微信：<span>暂无填写</span></p>
+                        {% endif %}
+                        <p class="qq">邮箱：<span>{{ user_obj.0.email }}</span></p>
+                        {% if user_obj.0.phone  and request.session.is_login%}
+                            <p class="iphone">电话：<span>{{ user_obj.0.phone }}</span></p>
+                        {% else %}
+                            <p class="iphone">电话：<span>暂无填写</span></p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

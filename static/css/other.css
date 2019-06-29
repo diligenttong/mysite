@@ -1,0 +1,167 @@
+.layui-textarea {
+        min-height: 100px;
+        padding: 6px 10px;
+}
+
+
+.content .review-version .form .layui-input-block .layui-btn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    background: #ff7f21;
+        margin-right: -170px;
+}
+.leacots-content .review-version .form {
+    margin: 40px 0;
+}
+
+.layui-form-item {
+    margin-bottom: 15px;}
+.layui-btn {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: #009688;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.leacots-content .review-version .volume span {
+    padding-left: 30px;
+    color: #f37d25;}
+
+.content .review-version .list-cont .cont .text .tit {
+    line-height: 50px;
+    margin-bottom: 0;}
+
+
+.content .review-version .list-cont .cont .text .data {
+    float: right;}
+
+.content .review-version .list-cont .cont .text .ct {
+    margin-top: 20px;
+}
+
+
+.content .review-version .list-cont .cont .text .tit .name {
+    margin-left: 20px;
+}
+
+
+.content .review-version .list-cont .cont {
+    padding: 40px 0 30px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.content .review-version .list-cont .cont .text {
+    padding-left: 0;
+    line-height: 22px;
+    color: #333;
+}
+.layui-input, .layui-textarea {
+    display: block;
+    width: 1000px;;
+    padding-left: 10px;
+}
+.leacots-content .review-version .form textarea {
+    border-color: #402760;
+}
+.content .review-version img {
+    float: left;
+}
+.layui-input, .layui-select, .layui-textarea {
+    border-width: 1px;
+    border-style: solid;
+    background-color: #fff;
+    border-radius: 2px;}
+
+.leacots-content .review-version .banner-img {
+    float: none;
+
+}
+
+img {
+    border: none;
+}
+.layui-btn, .layui-edge, .layui-inline, img {
+    vertical-align: middle;
+}
+.layui-inline, img {
+    display: inline-block;
+
+}
+
+.whisper-content .cont {
+
+    margin: 0 auto;
+}
+
+
+
+.leacots-content .item-box {
+    background: transparent;
+}
+.whisper-content .item-box {
+
+    margin-bottom: 20px;}
+
+
+.leacots-content .review-version {
+    padding: 0;
+    border-top: 0;
+}
+
+
+.whisper-content {
+     padding: 0 0 60px 0;
+        margin-left: 150px;
+}
+
+.footer .qrcode {
+    float: left;
+}
+.footer .qrcode img{
+    height: 160px;
+    width: 160px;
+}
+.footer .practice-mode {
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+}
+.footer .practice-mode img {
+    float: left;
+    padding-right: 28px;
+
+}
+
+
+.footer .practice-mode .text {
+    color: #3f2863;
+    float: left;
+}
+
+
+.footer .practice-mode .text p {
+    line-height: 32px;
+}
+
+
+.footer .practice-mode .text p span {
+    padding-left: 24px;
+}
+.footer {
+    padding: 60px 0 80px 0;
+    position: relative;
+    overflow: hidden;
+    text-align: -webkit-auto;
+}
+.footer-wrap {
+    border-top: 1px solid #402863;
+}
+

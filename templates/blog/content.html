@@ -1,0 +1,23 @@
+{% extends "header.html" %}
+{% block title %}blog{% endblock %}
+{% block content %}
+    <div class="row text-center vertical-middle-sm">
+        <h1>{{ article.title }}</h1>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-8">
+            <p class="text-center">
+                <span>{{ article.category }}</span>
+                <span style="margin-left: 20px">{{ pub_date }}</span>
+            </p>
+
+            <div>{{ article.content }}</div>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h2>关于我</h2>
+            <p>这个人很懒，什么也没留下</p>
+            <img src="/static/banner/04.png" alt="">
+        </div>
+    </div>
+
+{% endblock %}
